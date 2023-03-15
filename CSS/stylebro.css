@@ -1,250 +1,280 @@
 *{
     padding: 0;
     margin: 0;
-    text-decoration: none;
-    list-style: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-nav{
-    background: #20dc62;
-    height: 80px;
-    width: 100%;
-}
-.enlace{
-    position: absolute;
-    padding: 20px 50px;
-}
-.logo{
-    height: 60px;
-    width: 150px;
-    margin-top: -10px;
-}
-nav ul{
-    float: right;
-    margin-right: 20px;
-    z-index: 2000;
-}
-
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 8px;
-}
-nav ul li a{
-    color: #fff;
-    font-size: 0.8em;
-    padding: 7px 1px;
-    border-radius: 3px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-li a.active, li a:hover{
-    background: #38ecc2;
-    transition: .5s;
-}
-.checkbtn{
-    font-size: 30px;
-    color: #fff;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-#check{
-    display: none;
-}
 body{
-    background:  url(../Imagenes/background.jpg) no-repeat;
+    background: url(../Imagenes/background.jpg);
     background-size: cover;
     background-position: center center;
     height: calc(100vh - 80px);
     background-attachment: fixed;
     text-decoration: none;
+    height: 100vh;
+    width: 100%;
+    position: relative;
 }
 
-.texto-principal{
+.menu_bar{
+    display: none;
+}
+
+header{
+    width: 100%;
+}
+
+header nav{
+    background: rgb(0, 255, 0);
+    z-index: 1000;
+  
+    width: 100%;
+    margin: 0px 0px;
+}
+
+header nav ul{
+    list-style: none;
+    border-radius: 0.4rem;
+}  
+
+header nav ul li{
+    display: inline-block;
+    position: relative;
+}
+
+/*Menu desplegable*/
+header nav ul li:hover .children{
+ display: block;
+}
+
+header nav ul li .children{
+    display: none;
+    background: #011826;
+    position: absolute;
+    width: 180%;
+    padding: 0%;
+    z-index: 1000;
+}
+
+header nav ul li .children li{
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+header nav ul li .children li a {
+    display: block;
+    font-size: 0.88em;
+}
+
+header nav ul li .children li a span{
+    float: right;
+    position: relative;
+    top: 3px;
+    margin-right: 0;
+    margin-left:  10px;
+}
+ header nav ul li .caret {
+    position: relative;
+    top: 3px;
+    margin-left: 10px;
+    margin-right: 0px;
+ }
+/*Divisor*/
+header nav ul li:hover{
+    background: rgb(0, 204, 255);
+}
+header nav ul li a{
+    color: #fefefe;
+    font-size: 1.2em;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+}
+
+header nav ul li a span{
+    margin-right: 10px;
+}
+
+.logo {
+    max-width: 120px; /* Ajusta el valor según sea necesario */
+    height: auto;
+    position: relative;
+    left: 40%;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+  
+
+.texto-principal {
     padding: 8%;
     text-align: center;
     font-size: 1.0em;
     margin: 0 auto;
     max-width: 1200px;
-    text-decoration: none;
+    z-index: 0;
 }
 
 .texto-principal img{
-  position: center center;
-  width: 60%;
-  margin-bottom: 20px;
+    position: center center;
+    width: 60%;
 }
 
-.carousel-custom {
-    margin: 0 auto;
+.custom-carousel{
     width: 80%;
-    margin-bottom: 40px;
-  }
-
-
-  
-  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
-  .pie-de-pagina{
+    margin-bottom: 50px;
+}
+footer{
     width: 100%;
-    background-color: #1a3a56;
-  }
-
-  .pie-de-pagina .grupo-1{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15%px;
-    padding: 65px 0px;
-  }
-
-  .pie-de-pagina .grupo-1 .box figure{
-    width: 100%;
-    height: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: #0e0e0e;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .pie-de-pagina .grupo-1 .box figure img{
-    width: 350px;
-    height: 140px;
-  }
-
-  .pie-de-pagina .grupo-1 .box h2{
-    color: #fff;
-    margin-bottom: 25px;
-    font-size: 20px;
-  }
-
-  .pie-de-pagina .grupo-1 .box p{
-    color: #efefef;
-    margin-bottom: 10px;
-  }
-
-  .pie-de-pagina .grupo-1 .red-social a{
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    margin-right: 15px;
-    background-color: #0d2033;
-    text-align: center;
-    transition: all 300ms ease;
-  }
-
-  .pie-de-pagina .grupo-1 .red-social a:hover{
-    color: aqua;
-  }
-
-  .pie-de-pagina .grupo-2{
-    background-color: #0a1a2a;
-    padding: 15px 10px;
-    text-align: center;
-    color: #fff;
-  }
-
-  .pie-de-pagina .grupo-2 small{
-    font-size: 15px;
-  }
-
-
-@media (max-width: 1120px){
-  .enlace{
-    padding-left: 20px;
-  }
-  nav ul li a{
-    font-size: 14px;
-  }
-  .checkbtn{
-    display: block;
-  } 
-  ul{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #2c3e50;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-  }
-  #check:checked ~ul{
-  left: 0;
-  }
-  nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a{
-    font-size: 20px;
-  }
-  li a:hover, a.active{
-  background: none;
-  color: red;
-  }
+    flex-direction: column;
 }
 
-@media (max-width: 858px){
+.logo-footer{
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.social-icons-container, .footer-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.social-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #f2f2f2;
+    background-image: url(../icons/facebook.png);/*descargar imagen icono de facebook y pegarlo aqui*/
+    background-position: center;
+    background-size: 40%;
+    background: no-repeat;
+    margin: 1rem;
+}
+
+.social-icon:hover{
+    background-color: #121212;
+    filter: invert(1);
+}
+
+.social-icon:nth-of-type(1){
+    background-image: url(../icons/facebook.png);/*descargar y pegar imagen icon de red social*/
+    background-size: contain;
+}
+
+.social-icon:nth-of-type(2){
+    background-image: url(../icons/instagram.png);/*descargar y pegar imagen icon de red social*/
+}
+
+.footer-menu-container{
+    list-style-type: none;
+    color: #f2f2f2;
+    font-size: 18px;
+}
+
+.footer-menu-container a{
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.menu-item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.menu-item:hover{
+    opacity: 1;
+}
+
+.copyright{
+    color: #f2f2f2;
+    opacity: 0.3;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
     body{
-        background:  url(../Imagenes/background.jpg) no-repeat;
-        background-size: cover;
-        background-position: center center;
-        height: calc(100vh - 80px);
-        background-attachment: fixed;
+        padding-top: 80px;
+    }
+
+    .logomovil{
+        width: 27%;
+    }
+    
+    .logo{
+        display: none;
+    }
+    .menu_bar {
+        display: block;
+        width: 100%;
+        position: fixed;
+        top:0%;
+        background: rgb(0, 255, 0);
+    }
+
+    .menu_bar .bt-menu{
+        display: block;
+        padding: 20px;
+        color: #fff;
+        overflow: hidden;
+        font-size: 25px;
+        font-weight: bold;
         text-decoration: none;
     }
-    .checkbtn{
-        display: block;
+    
+    .menu_bar span {
+        float: right;
+        font-size: 40px;
     }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    nav ul li a{
-        font-size: 20px;
-    }
-    li a:hover, a.active{
-        background: none;
-        color: red;
-    }
-    #check:checked ~ul{
-        left: 0;
-    }
-    .texto-principal {
-    font-size: 0.8em;
-    padding: 20px;
-  }
-  .pie-de-pagina .grupo-1{
-    width: 90%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-    padding: 20px 0px;
-  }
-  .pie-de-pagina .grupo-1 .box figure img{
-    width: 150px;
-    height: 50px;
-  }
-}
-.dropdown-menu {
-  z-index: 2000;
-}
 
+    header nav {
+        width: 80%;
+        height: calc(95% - 80px);
+        position: fixed;
+        right: 100%;
+        margin: 0;
+        overflow: scroll;
+    }
+
+    header nav ul li {
+        display: block;
+        border-bottom: 1px solid rgba(255,255,255.5);
+        margin-right: 7px;
+
+    }
+
+    header nav ul li a {
+        display: block;
+        font-size: 1.8em;
+    }
+
+    header nav ul li:hover .children{
+        display: none;
+    }
+
+    header nav ul li .children{
+        width: 100%;
+        position: relative;
+    }
+
+    header nav ul li .children li a {
+        margin-left: 0px;
+    }
+
+    header nav ul li .caret {
+        float: right;
+    }
+}
