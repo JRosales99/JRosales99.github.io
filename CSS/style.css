@@ -111,18 +111,8 @@ header nav ul li a span{
 }
   
 
-.texto-principal {
-    padding: 8%;
-    text-align: center;
-    font-size: 1.0em;
-    margin: 0 auto;
-    max-width: 1200px;
-    z-index: 0;
-}
-
-.texto-principal img{
-    position: center center;
-    width: 60%;
+.site-in-construccion{
+    width: 100%;
 }
 
 footer{
