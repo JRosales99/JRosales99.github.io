@@ -27,7 +27,7 @@ header{
 }
 
 header nav{
-    background: rgb(31, 228, 31);
+    background: rgb(169, 169, 169);
     z-index: 1000;
   
     width: 100%;
@@ -102,7 +102,7 @@ header nav ul li a span{
     max-width: 120px; /* Ajusta el valor según sea necesario */
     height: auto;
     position: relative;
-    left: 40%;
+    left: 20%;
     margin-top: 5px;
     margin-bottom: 8px;
 }
@@ -144,6 +144,11 @@ header nav ul li a span{
 .custom-carousel{
     width: 80%;
     margin-bottom: 50px;
+    z-index: 0;
+}
+
+.carousel-image{
+    z-index: 0;
 }
 footer{
     width: 100%;
@@ -225,6 +230,12 @@ footer{
     text-align: center;
 }
 
+@media screen and (max-width: 1240px) {
+    .logo{
+        left: 0%;
+    }
+}
+
 @media screen and (max-width: 800px) {
     body{
         padding-top: 80px;
@@ -242,7 +253,8 @@ footer{
         width: 100%;
         position: fixed;
         top:0%;
-        background: rgb(0, 255, 0);
+        background: rgb(169, 169, 169);
+        z-index: 1;
     }
 
     .menu_bar .bt-menu{
@@ -266,6 +278,7 @@ footer{
         position: fixed;
         right: 100%;
         margin: 0;
+        margin-top: 15px;
         overflow: scroll;
     }
 
