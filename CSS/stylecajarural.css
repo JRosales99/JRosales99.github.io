@@ -187,7 +187,7 @@ footer{
 }
 
 .social-icon:nth-of-type(2){
-    background-image: url(../icons/instagram.gif);/*descargar y pegar imagen icon de red social*/
+    background-image: url(../Icons/instagram.gif);/*descargar y pegar imagen icon de red social*/
     background-size: contain;
 }
 
