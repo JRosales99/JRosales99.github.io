@@ -66,7 +66,7 @@ header nav ul li .children li{
 
 header nav ul li .children li a {
     display: block;
-    font-size: 15px;
+    font-size: 0.88em;
 }
 
 header nav ul li .children li a span{
@@ -98,13 +98,15 @@ header nav ul li a span{
     margin-right: 10px;
 }
 
-.logo{
-    width: 10%;
-    position: absolute;
-    left: 80%;
-    margin-top: 4px;
+.logo {
+    max-width: 120px; /* Ajusta el valor según sea necesario */
+    height: auto;
+    position: relative;
+    left: 40%;
+    margin-top: 5px;
     margin-bottom: 8px;
 }
+  
 
 .texto-principal {
     padding: 8%;
@@ -120,7 +122,22 @@ header nav ul li a span{
     width: 60%;
 }
 
+ .list-valores {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
+.list-valores li {
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+ 
+.custom-carousel{
+    width: 80%;
+    margin-bottom: 50px;
+}
 footer{
     width: 100%;
     position: relative;
@@ -152,7 +169,7 @@ footer{
     width: 50px;
     border-radius: 50px;
     border: 1px solid #f2f2f2;
-    background-image: url();/*descargar imagen icono de facebook y pegarlo aqui*/
+    background-image: url(../icons/facebook.png);/*descargar imagen icono de facebook y pegarlo aqui*/
     background-position: center;
     background-size: 40%;
     background: no-repeat;
@@ -164,12 +181,14 @@ footer{
     filter: invert(1);
 }
 
-.social-icon:nth-of-type(2){
-    background-image: url();/*descargar y pegar imagen icon de red social*/
+.social-icon:nth-of-type(1){
+    background-image: url(../Icons/facebook.gif);/*descargar y pegar imagen icon de red social*/
+    background-size: contain;
 }
 
-.social-icon:nth-of-type(3){
-    background-image: url();/*descargar y pegar imagen icon de red social*/
+.social-icon:nth-of-type(2){
+    background-image: url(../icons/instagram.gif);/*descargar y pegar imagen icon de red social*/
+    background-size: contain;
 }
 
 .footer-menu-container{
@@ -235,7 +254,7 @@ footer{
     }
 
     header nav {
-        width: 80%;
+        width: 90%;
         height: calc(95% - 80px);
         position: fixed;
         right: 100%;
@@ -252,7 +271,7 @@ footer{
 
     header nav ul li a {
         display: block;
-        font-size: 1.8em;
+        font-size: 1.4em;
     }
 
     header nav ul li:hover .children{
@@ -266,6 +285,7 @@ footer{
 
     header nav ul li .children li a {
         margin-left: 0px;
+        font-size: 0.75em;
     }
 
     header nav ul li .caret {
