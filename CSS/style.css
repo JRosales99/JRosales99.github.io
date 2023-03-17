@@ -109,10 +109,40 @@ header nav ul li a span{
     margin-top: 5px;
     margin-bottom: 8px;
 }
-  
 
-.site-in-construccion{
-    width: 100%;
+.text-body img{
+    position: center center;
+    width: 60%;
+    justify-content: center;
+}  
+.text-body{
+    padding: 8%;
+    text-align: center;
+    font-size: 1.0em;
+    margin: 0 auto;
+    max-width: 1200px;
+    z-index: 0;
+}
+
+
+.card-all{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.card-all-2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.card-all card-style{
+    margin: 15px;
+}
+
+.img-gdelvalle{
+    margin-bottom: 15px;
 }
 
 footer{
@@ -220,6 +250,7 @@ footer{
         position: fixed;
         top:0%;
         background: rgb(169, 169, 169);
+        z-index: 500;
     }
 
     .menu_bar .bt-menu{
@@ -243,7 +274,7 @@ footer{
         position: fixed;
         right: 100%;
         margin: 0;
-        margin-top: 15px;
+        margin-top: 3px;
         overflow: scroll;
     }
 
@@ -275,5 +306,11 @@ footer{
 
     header nav ul li .caret {
         float: right;
+    }
+
+    .card-all{
+        position: relative;
+        display: grid;
+        justify-content: center;
     }
 }

@@ -123,6 +123,10 @@ header nav ul li a span{
     padding-bottom: 25px;
 }
 
+.texto-principal h2,h3{
+    font-size: 2.0em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
  .list-valores {
   margin: 0;
   padding: 0;
@@ -268,7 +272,7 @@ footer{
         position: fixed;
         right: 100%;
         margin: 0;
-        margin-top: 15px;
+        margin-top: 3px;
         overflow: scroll;
     }
 
@@ -300,5 +304,10 @@ footer{
 
     header nav ul li .caret {
         float: right;
+    }
+
+    .texto-principal h2,h3{
+        font-size: 1.26em;
+        font-family: 'Roboto Condensed', sans-serif;
     }
 }
