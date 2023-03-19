@@ -4,7 +4,7 @@
 $nombre = $_POST['nombre'];
 $telefono = $_POST['telefono'];
 $correo = $_POST['correo'];
-$nombre = $_POST['mensaje'];
+$mensaje = $_POST['mensaje'];
 
 // datos para el correo
 $destinatario = "jaffryjosuerosales@gmail.com";
