@@ -99,6 +99,8 @@ header nav ul li a span{
 }
 
 .logo {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
     max-width: 120px; /* Ajusta el valor según sea necesario */
     height: auto;
     position: relative;
@@ -164,6 +166,8 @@ footer{
 }
 
 .logo-footer{
+    background-color: rgba(255, 255, 255);
+    border-radius: 10px;
     height: 80px;
     margin-bottom: 1rem;
 }
@@ -200,6 +204,11 @@ footer{
 
 .social-icon:nth-of-type(2){
     background-image: url(../Icons/instagram.gif);/*descargar y pegar imagen icon de red social*/
+    background-size: contain;
+}
+
+.social-icon:nth-of-type(3){
+    background-image: url(../Icons/whatsapp.gif);/*descargar y pegar imagen icon de red social*/
     background-size: contain;
 }
 
@@ -242,6 +251,8 @@ footer{
     }
 
     .logomovil{
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
         width: 27%;
     }
     
@@ -315,5 +326,9 @@ footer{
     .texto-principal h2{
         font-size: 1.26em;
         font-family: 'Roboto Condensed', sans-serif;
+    }
+    .logo-footer{
+        background-color: rgba(255, 255, 255);
+        border-radius: 10px;
     }
 }
