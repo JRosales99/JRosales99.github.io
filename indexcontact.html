@@ -29,13 +29,13 @@
         <li class="submenu">
           <a href="#"><span class="icon-office"></span></span>Empresas<span class="caret icon-circle-down"></span></a>
           <ul class="children">
-            <li><a href="indexbro.html">BIENES RAICES OLANCHITO<span class="icon-radio-checked"></span></a></li>
-              <li><a href="indexdepro.html">DEPROHVA<span class="icon-radio-checked"></span></a></li>
-              <li><a href="indexjardin.html">JARDIN DE PAZ SAN JORGE<span class="icon-radio-checked"></span></a></li>
-              <li><a href="indextex.html">TEXACO LAS AMERICAS<span class="icon-radio-checked"></span></a></li>         
-              <li><a href="indexcajarural.html">CAJA RURAL DE AHORRO Y CREDITO<span class="icon-radio-checked"></span></a></li>
-              <li><a href="indexdTexs3.html">TEXACO S3-PICNIC<span class="icon-radio-checked"></span></a></li>
-              <li><a href="indexfdelvalle.html">FUNDACION DEL VALLE<span class="icon-radio-checked"></span></a></li>
+            <li><a href="indextex.html">TEXACO LAS AMERICAS <span class="icon-radio-checked"></span></a></li>
+            <li><a href="indexbro.html">BIENES RAICES OLANCHITO <span class="icon-radio-checked"></span></a></li>
+            <li><a href="indexjardin.html">JARDIN DE PAZ SAN JORGE <span class="icon-radio-checked"></span></a></li>
+            <li><a href="indexcajarural.html">CAJA RURAL DE AHORRO Y CREDITO <span class="icon-radio-checked"></span></a></li>
+            <li><a href="indexdepro.html">DEPROHVA <span class="icon-radio-checked"></span></a></li>
+            <li><a href="indexdTexs3.html">TEXACO S3-PICNIC <span class="icon-radio-checked"></span></a></li>
+            <!--<li><a href="indexdTexs3.html">FDELVALLE<span class="icon-radio-checked"></span></a></li>-->
           </ul>
         </li>
         <li><a href="indexcontact.html"><span class="icon-phone"></span>Contactanos</a></li>
@@ -57,25 +57,43 @@
             </section>
         </section>
 
-        <form method='POST' action='/php/send.php'>
-            <h2>Envia un mensaje</h2>
-            <div class="user_info">
-                <label for="names">Nombres</label>
-                <input type="text" id="names" name="nombre" required>
+        <form method='POST' class="form_contact">
+          <h2>Envia un mensaje</h2>
+          <div class="user_info">
+              <label for="names">Nombres</label>
+              <input type="text" id="names" name="nombre" required>
+      
+              <label for="phone">Telefono</label>
+              <input type="text" id="phone" name="telefono" required>
+      
+              <label for="email">Correo electronico</label>
+              <input type="text" id="email" name="correo">
 
-                <label for="phone">Telefono</label>
-                <input type="text" id="phone" name="telefono" required>
+              <label for="empresa">Empresa</label>
+              <select id="empresa" name="empresa">
+                <option value="" selected disabled>Seleccione una opción</option>
+                <option value="Empresa A">Bienes Raices Olanchito</option>
+                <option value="Empresa B">Deprohva</option>
+                <option value="Empresa C">Jardin De Paz San Jorge</option>
+              </select>
 
-                <label for="email">Correo electronico</label>
-                <input type="text" id="email" name="correo">
-
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-
-                <input type="submit" value="Enviar Mensaje" id="btnSend">
-            </div>
-        </form>
-
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" required></textarea>
+      
+              <label for="empresa">Empresa</label>
+              <select id="empresa" name="empresa">
+                  <option value="Empresa A">Empresa A</option>
+                  <option value="Empresa B">Empresa B</option>
+                  <option value="Empresa C">Empresa C</option>
+              </select>
+      
+              <input type="submit" value="Enviar Mensaje" id="btnSend">
+          </div>
+      </form>
+      
+        <?php
+          include("registrar.php")
+        ?>
     </section>
     <footer>
         <img src="./Imagenes/logo.png" alt="logo grupo del valle" class="logo-footer">
