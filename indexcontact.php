@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="Contacto Grupo del valle" content="Contacta con nosotros en grupo del valle">
     <link rel="stylesheet" href="CSS/estilos.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="fonts.css"></link>
@@ -100,10 +101,9 @@
           <a href="" class="social-icon"></a>
         </div>-->
         <ul class="footer-menu-container">
-          <a href=""><li class="menu-item">Inicio</li></a>
-          <!--<li class="menu-item">Inicio</li>-->
-          <a href=""><li class="menu-item">Contactanos</li></a>
-        </ul>
+          <li class="menu-item"><a href="index.html">Inicio</a></li>
+          <li class="menu-item"><a href="indexcontact.php">Contactanos</a></li>
+        </ul> 
         <span class="copyright">&copy;2023, GRUPO DEL VALLE. TODOS LOS DERECHOS RESERVADOS.</span>
       </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
